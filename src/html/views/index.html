@@ -1,0 +1,13 @@
+<% 
+  var data = {
+    title: "Заголовок страницы - Наименование проекта"
+  };
+%>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="container">
+  Содержимое первой страницы.
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
